@@ -7,7 +7,8 @@ End‑to‑end hydroponics assistant combining:
 
 This repo contains the **ML notebook**, **APIs**, and **scrapers** used to build the minimum viable product for this capstone project.
 
-**Demo video:** [Initial Software Demo](https://www.youtube.com/watch?v=_n-pDjz9OK0) (YouTube)
+**Demo video:** [Initial Software Demo](https://www.youtube.com/watch?v=_n-pDjz9OK0) (YouTube)  
+**Repository:** [github.com/Afsaumutoniwase/capstone](https://github.com/Afsaumutoniwase/capstone)
 
 ---
 
@@ -21,7 +22,6 @@ This repo contains the **ML notebook**, **APIs**, and **scrapers** used to build
 - `chat.py` – **GrowMate chatbot** Flask + Flask‑RESTX API + simple web UI (hybrid QA, Swagger at `/swagger/` and chat UI at `/`).
 - `Results/` – trained artefacts for EzaSmart: `random_forest_model.pkl`, `feature_scaler.pkl`, `crop_encoder.pkl`, `action_encoder.pkl` (loaded by `app.py`). 
 
----
 
 ## 2. Datasets used
 
@@ -73,7 +73,6 @@ During training (notebook not included here to keep the repo focused), you:
 
 At runtime, `app.py` loads these artefacts and exposes `/predict` as a REST endpoint with full validation and a human‑readable recommendation string.
 
----
 
 ## 3. Environment setup
 
@@ -101,7 +100,6 @@ Place the following in the project root:
 - `HydroGrowNet of Batavia Dataset/` – Excel directory (optional if only StackExchange data is needed).  
 - For EzaSmart: place `random_forest_model.pkl`, `feature_scaler.pkl`, `crop_encoder.pkl`, `action_encoder.pkl` in the `Results/` directory (loaded by `app.py` from there).
 
----
 
 ## 4. How to run
 
@@ -140,4 +138,3 @@ Then open:
 - **Swagger docs**: `http://localhost:5000/swagger/` – try the `/predict` endpoint by sending sensor readings.  
 - **Health check**: `http://localhost:5000/health`.
 
----

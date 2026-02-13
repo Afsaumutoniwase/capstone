@@ -1,0 +1,713 @@
+﻿`   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Project Title: Bridging Knowledge Gaps with AI-Powered Hydroponics Software System.
+
+
+
+
+
+
+Program Name: Bachelor's of Software Engineering
+
+
+Your name: Afsa Umutoniwase
+
+
+Course: Mission Capstone
+
+
+
+
+
+
+
+
+Supervisor: Ndinelao Iitumba
+
+
+
+
+
+
+Year: 2026
+
+
+________________
+
+
+
+
+DECLARATION
+
+
+This Proposal Project is my original work, unless stated and all external sources have been referenced or cited in my document. This work has not been presented for award of degree or for any similar purpose in any other university
+
+
+Signature: afsa umutoniwase                         Date: 14th January 2026
+Name of Student: Afsa Umutoniwase 
+________________
+
+
+CERTIFICATION
+
+
+
+
+
+
+
+
+
+
+The undersigned certifies that he has read and hereby recommended for acceptance of African Leadership University a report entitled Bridging Knowledge Gaps with AI-Powered Hydroponics Software System.
+
+
+Signature………………………                                 Date………………………….
+Prof/Dr./Mrs./Miss/Mr. Name of the Supervisor
+Faculty,
+Bachelor of Software Engineering,
+ALU
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+DEDICATION AND ACKNOWLEDGEMENT 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TABLE OF CONTENTS
+DECLARATION ................................................................................................. 2
+CERTIFICATION ............................................................................................... 3
+DEDICATION AND ACKNOWLEDGEMENT ...................................................... 4
+LIST OF ACRONYMS/ABBREVIATIONS .......................................................... 6
+CHAPTER ONE: INTRODUCTION ...................................................................... 7
+    1.1 Introduction and Background .................................................................... 7
+    1.2 Problem Statement ................................................................................... 7
+    1.3 Project’s Main Objective ........................................................................... 7
+    1.4 Research Questions ................................................................................. 8
+    1.5 Project Scope ........................................................................................... 8
+    1.6 Significance and Justification ................................................................... 8
+    1.7 Research Budget ...................................................................................... 9
+    1.8 Research Timeline ................................................................................... 9
+CHAPTER TWO: LITERATURE REVIEW ............................................................ 10
+    2.1 Introduction .............................................................................................. 10
+    2.2 Fundamentals of Hydroponics …………………....................................... 10
+    2.3 Global and Regional Context ..................................................................... 12
+    2.4 Machine Learning in Hydroponics.............................................................. 14
+    2.5 Overview of the Existing System(s) ........................................................... 14
+    2.6 Review of Related Work …………............................................................ 16
+    2.7 Strength and Weaknesses of Existing System(s) ....................................... 17
+    2.8 The Research Gap ….................................................................................. 17
+    2.9 General Comment and Conclusion ............................................................. 17
+CHAPTER THREE: SYSTEM ANALYSIS AND DESIGN ...................................... 18
+    3.1 Introduction .............................................................................................. 18
+    3.2 Research Design  ………………………………….................................. 18
+    3.3 Dataset and Dataset Description ……………………............................... 18
+    3.4 Functional and Non-functional Requirements .......................................... 20
+    3.5 Proposed Model Diagram ........................................................................ 22
+    3.6 System Architecture ................................................................................. 22
+    3.7 Ethical Considerations .............................................................................. 22
+    3.8 UML Diagrams …….................................................................................. 22
+    3.9 Development Tools .................................................................................. 26
+REFERENCES ..................................................................................................... 27
+LIST OF ACRONYMS/ABBREVIATIONS
+* AI: Artificial Intelligence
+* EC: Electrical Conductivity (Nutrient Concentration)
+* IoT: Internet of Things
+* ML: Machine Learning
+* pH: Potential of Hydrogen
+* SDLC: Software Development Life Cycle
+* WFF: World Food Forum
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER ONE: INTRODUCTION
+1.1 Introduction and Background
+Agriculture is a primary engine of economic development within Rwanda, accounting for about 25% of the country’s gross domestic product (GDP) and employing 64.5% of the country’s population (RDB, 2024). However, the sector faces a lot of challenges, which are making traditional rain-fed agriculture less effective, especially in the wake of climate change. Challenges such as irregular rainfall patterns and prolonged drought periods can significantly affect the productivity of agriculture (RODI, 2024). Pressures on the environment continue to worsen, especially with the rise in population. From the 2022 population census, the population density is 503 persons per square kilometer, up from 415 in 2012 (NISR, 2023). High population density is a major contributor to the country’s annual loss of almost 1% of arable land, which is mostly lost through urbanization and erosion on sloping land (UNDP, 2023; Waithaka et al., 2013). This puts small-scale farmers, who produce 83.1% of the country’s food, at a higher risk, especially from dry spells, which can easily occur and cause significant destruction (RDB, 2024; RODI, 2024).
+In order to address the issue of land scarcity, high population pressure, and land degradation, Rwanda has adopted land consolidation, terracing, and large irrigation schemes (NISR, 2023; REMA, 2024). Even though the above practices ensure soil stability and the organization of small farmer plots, they do not address the issue of land loss. Another solution is hydroponic farming, which is an effective alternative that enables the growth of crops in nutrient-rich water. The system produces more yields using less land, making it more climate-resilient (UNDP, 2025; Jones, 2005).
+Hydroponic technology is already being utilized for the development of Rwanda, with a focus on improving the quality of hay in the milk industry and increasing food security through indoor farming in urban areas (UKC Rwanda, 2025; ACEIoT, 2025). The sector is now slowly adopting precision farming technologies, including satellite imaging and machine learning (ML), to improve productivity (AllAfrica, 2025; TechPalate Insights, 2025). However, a major challenge in the sector is that most of the advanced hydroponic technologies require expensive, foreign-made hardware and software designed for Western greenhouses (RODI, n.d.; Dutta et al., 2025). Rwanda's farmers still lack the necessary technologies to provide guidance on the regulation of nutrients and pH, which require only basic information (Shalash, 2024; Mizero Agritech, 2025). FarmSmart will be a software solution that will utilize ML insights to deliver expert advice and support Rwandan farmers in moving from risky subsistence to strong, data-driven businesses.
+1.2 Problem Statement
+
+
+Smallholder farmers in Rwanda face many problems in using hydroponic technology, including the fact that they don’t possess scientific knowledge and face financial constraints. The major solutions that exist to tackle this problem consist of commercial IoT-automated solutions (Grozine, 2025), such as Grozine, and international technological consultation services (Mastercard Foundation, 2025). The major limitation to this technology is that the cost of the automated technology is higher, and in the case of cooperatives, it is even higher, while international consultants’ suggestions aren’t tailored to the water and temperature conditions in Rwanda.
+
+
+This gives rise to the “Technical Knowledge Gap” in which the farmer chooses to practice soilless cultivation but fails as they do not know how to properly estimate the levels of EC and pH. It is this Technical Knowledge Gap that FarmSmart seeks to fill. FarmSmart will allow the farmer to get accurate estimates with the help of manual entries, thus making the current hardware sensor solution redundant.
+
+
+1.3 Project’s Main Objective 
+The overall objective of this project will be to create a local software-only Machine Learning environment that will democratize hydroponic knowledge to enhance food and economic sustainability among small-scale farmers in Rwanda.
+1.3.1 Specific Objectives
+To conduct a comprehensive review of existing hydroponic software literature and perform field visits to local farms (such as Ezaneza and Ndego) to identify the specific operational challenges faced by hydroponic managers in Rwanda by February 12, 2026.
+To develop and train a Machine Learning engine coupled with a Chatbot interface that automates the conversion of manual pH and Electrical Conductivity (EC) readings into actionable management recommendations by March 5, 2026.
+To validate the platform’s efficacy by measuring the prediction accuracy of the Machine Learning model and evaluating decision-making confidence among a designated group of cooperating farmers by March 31, 2026.
+
+
+1.4 Research Questions
+Can a machine learning model provide reliable nutrient management advice using only the basic data points a farmer can manually provide?
+
+
+What user interface features in a conversational AI chatbot are most effective for conveying scientific agricultural advice to non-technical users?
+
+
+How effectively does a peer-to-peer digital forum foster trust and shared knowledge within a localised farming community?
+
+
+1.5 Project Scope
+In terms of geographical location, this project aims to conduct a sample of farmers in the Southern Province of Rwanda. In terms of technology, this project involves a mobile-responsive web application with a machine learning engine, a chatbot, and a forum. The project involves three main crops: lettuce, peppers and tomatoes. The project does not involve building a physical greenhouse or automated hardware sensors.
+
+
+1.6 Significance and Justification
+The successful execution of FarmSmart should eliminate what is known as the “expert barrier” for thousands of small-scale farmers. This means that what was a high-risk scientific activity for them will be transformed into a low-risk activity. Through the democratisation of such knowledge, the platform helps Rwanda meet its national vision of developing a high-value, data-based agriculture sector. Finally, the project ensures environmental protection through the promotion of soilless agriculture, which cuts the wastage of water and prevents the degradation of soil on the slopes of Rwanda’s hills.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.7 Research Budget
+The following table outlines the estimated costs required to complete the research and development phases of the project.
+Item
+	Description
+	Estimated cost (Rwf)
+	Estimated cost (USD)
+	Domain Name
+	Annual registration for .rw or .com domain
+	35000
+	$25
+	Cloud Hosting
+	hosting and ML services
+	140000
+	$100
+	Transport
+	Fuel and transport for farm visits and field testing
+	100000
+	$70
+	Data\Internet
+	High-speed data for development and testing
+	70000
+	$50
+	Stationery/Misc
+	Printing reports and miscellaneous supplies
+	25000
+	$15
+	TOTAL
+	
+
+	370000
+	$260
+	1.8 Research Timeline (January - March 2026)
+
+
+Phase
+	Activity
+	Duration
+	Timeline
+	Phase 1
+	Requirement Gathering & Literature Finalisation
+	3 weeks
+	Jan 1 - Jan 21
+	Phase 2
+	ML Model Training & System Architecture
+	3 weeks
+	Jan 22 - Feb 12
+	Phase 3
+	Backend & Chatbot Logic Development
+	3 weeks
+	Feb 13 - Mar 5
+	Phase 4
+	UI/UX Implementation & Community Forum
+	2 weeks
+	Mar 6 - Mar 20
+	Phase 5
+	Simulated Validation & Final Proposal Review
+	1 week
+	Mar 21 - Mar 31
+	CHAPTER TWO: LITERATURE REVIEW
+2.1 Introduction
+The purpose of this literature review is to evaluate the role of software interventions in the agricultural sector with a particular emphasis on the application of Machine Learning in controlled environments. It followed a research methodology based on a thorough search of academic literature in Google Scholar, ScienceDirect, ALU Library, as well as reports by the FAO and UNDP.
+From an initial pool of 25 academic articles, 18 key publications were determined based on their relevance to the Rwandan agritech industry and the technological viability of ML applications for smallholders. While this literature review attempts to narrow the current gap between general, industry-wide scholarly research and the software needs, such as interface design and prediction algorithms, required to break through the expert barrier in hydroponic management, the following sections will lay the groundwork for a local, data-scarce ML system that seeks to simplify chemical complexity and provide agricultural benefits.
+2.2 The Fundamentals of Hydroponics
+2.2.1. Definition and Scientific Principles
+Hydroponics is the science and art of cultivating plants without the aid of soil, instead utilizing a water-based mineral nutrient solution (USDA, 2022). This practice relies on three fundamental pillars: water, precisely balanced nutrients, and an inert growing medium, such as perlite, rockwool, or coconut coir, that serves as the "soil position" to anchor the crops (The Hippie House, 2019).
+In a traditional soil-based environment, plants must expend significant biological energy developing extensive root systems to search for nutrients. Conversely, in a hydroponic system, these nutrients are delivered directly to the roots in a dissolved state. This efficiency allows plants to grow 25–50% faster and produce up to 30% higher yields than traditional farming (Iberdrola, 2022).
+  
+
+                Image.1: Lettuce being grown hydroponically.
+2.2.2 Historical Evolution and Market Trends
+While often viewed as a modern innovation, the concept of soilless gardening dates back as far as 1627, with the earliest published work appearing in Sir Francis Bacon's Sylva Sylvarum. The technical foundation for modern soilless techniques was further developed between 1859 and 1875 by German botanists, with significant scientific experimentation on the concept accelerating in the 1950s (The Hippie House, 2019).
+Today, hydroponic technology has moved from the laboratory to a massive global market. In 2018, the global hydroponics market was valued at USD 23.94 billion and was projected to have reached USD 35.51 billion by 2024. While Europe remains the largest market holder with a share of approximately 47.3%, Africa boasts the fastest-growing market globally (The Hippie House, 2019). This rapid expansion is driven by the urgent need for food security; as global food demand rises and arable agricultural land decreases, hydroponics is emerging as a critical "savior" for future food systems.
+2.2.3 Chemical Indicators for System Success
+The success of a hydroponic system relies on the precise management of two primary chemical indicators, which form the core logic of the FarmSmart advisory engine:
+* pH Level: Measures the acidity or alkalinity of the water. For most crops, a slightly acidic range of 5.5 to 6.5 is the sweet spot where nutrients become chemically available for absorption. If the pH fluctuates outside this range, the plant may suffer from nutrient lockout.
+* Electrical Conductivity (EC): Measures the concentration of dissolved salts (nutrients) in the water. A high EC indicates a solution that is too strong and potentially toxic, while a low EC suggests a nutrient deficiency (The Hippie House, 2019).
+2.2.4 Common Hydroponic System Types
+Modern hydroponics is practiced through several distinct architectures, each requiring a specific setup of reservoirs, pumps, and timers (The Hippie House, 2019):
+* Deep Water Culture (DWC): Plant roots are submerged in a nutrient solution aerated by an air pump and stone. DWC is widely considered the most forgiving system and is ideal for beginners or large crops like tomatoes.
+* Wick System: The simplest passive system where a wick (made of cotton or nylon) draws water and nutrients from a reservoir to the plant roots via capillary action. It requires no electricity or pumps, making it highly accessible.
+* Nutrient Film Technique (NFT): A constant, shallow stream of nutrient-rich water flows through a tilted channel (often made of PVC pipe), allowing bare roots to come into contact with the film.
+* Ebb and Flow (Flood and Drain): A grow tray is periodically flooded with solution from a reservoir using a water pump and timer, then allowed to drain back, providing roots with alternating cycles of nutrients and oxygen.
+* Drip System: A pump delivers a nutrient solution to the base of each individual plant through a drip emitter. These are popular for their ease of adjustment and maintenance.
+* Aeroponics: A high-tech method where roots are suspended in the air and sprayed with a fine mist of nutrient solution. While highly efficient, it is typically recommended for expert growers due to its technical complexity.
+  
+
+                Image.2 different hydroponic system techniques
+2.3 Global and Regional Context
+2.3.1  Historical Background of the Research Topic
+Traditionally, hydroponics has been described as a high-precision luxury technology mainly employed in large-scale commercial businesses (Makino et al., 2013). But because of poor soil conditions in East Africa because of erosion and fragmentation, there was a shift in focus towards Climate-Smart approaches (Waithaka et al., 2013). The underlying scientific paradigm for soilless agriculture was set by scholars like Jones (2005), who explained the underlying dynamics for nutrient regulation (EC) and pH. 
+In recent years, there has been significant development in the area of Artificial Intelligence that has made possible the digitalization of these complex chemical processes. In Rwanda, this development has been driven by the critical national need for increased agricultural productivity in a limited land area, thus transforming agricultural practice from manual and intuitive to digital. 
+
+In the context of the developing world, the adoption of such digital agricultural tools represents a critical shift from capital-intensive infrastructure to knowledge-intensive systems (Asian Development Bank, 2024). While traditional Western models of hydroponics rely on expensive, automated dosing pumps and continuous sensor arrays, the Agriculture for the Developing World paradigm prioritizes low-cost, scalable interventions that address the information gap between raw data and actionable decisions (Ennaji et al., 2023). This approach focuses on empowering smallholder farmers by translating sophisticated chemical data into simplified, actionable insights, a necessity in regions like Rwanda where 76% of the population are smallholders with limited access to high-end automation (FAO, 2022). By leveraging localized Machine Learning models, these systems can bypass the need for industrial-grade automation, providing a pragmatic pathway for Rwandan farmers to optimize nutrient management using only basic manual inputs and accessible mobile interfaces designed to lower the technical barrier to entry (Smith et al., 2021).
+2.3.2 Practice in Africa and Beyond
+Beyond the developed markets of the Netherlands and Singapore, hydroponics is gaining significant traction in Africa as a response to climate volatility. In Egypt and South Africa, large-scale commercial facilities dominate. However, in East Africa, particularly Rwanda and Kenya, the focus has shifted toward vertical farming and localized urban systems. These practices aim to ensure food security in high-density areas where arable land is scarce.
+2.4 Machine Learning in Hydroponics
+2.4.1 Bridging the Expert Barrier with AI
+The primary challenge of hydroponics is its lack of a buffer. Unlike soil, which can stabilize chemical changes, a hydroponic solution can become toxic within hours if the pH or EC shifts. Traditionally, this required constant monitoring by human experts or expensive automated sensors.
+Machine Learning (ML) offers a transformative solution by providing predictive analytics. Algorithms such as Random Forest, Support Vector Machines (SVM), and Deep Neural Networks (DNN) are now used to:
+* Predict Nutrient Uptake: Analyzing how factors like temperature and humidity affect how quickly plants drink certain nutrients.
+* Automated Diagnosis: Identifying early signs of nutrient deficiency or root rot through image recognition or data trends before they are visible to the human eye.
+* Actionable Advice: Converting raw data points into specific instructions (e.g., "Add 10ml of pH Down") the core mission of the FarmSmart platform.
+2.5 Overview of Existing Systems
+The modernization of Rwanda’s agricultural landscape is currently defined by a digital divide between high-end commercial automation and the practical realities of independent smallholders, who manage approximately 91% of the country’s agricultural households (Rwanda Green Fund, 2025). On one hand, the government has made significant strides through Vision 2050 and the Strategic Plan for Agricultural Transformation (PSTA 4), fostering a Macro-level infrastructure that digitizes supply chains and market transparency. On the other hand, the private sector has seen the rise of High-Tech commercial hubs, such as Eza Neza, which utilize industrial-grade automation to prove the viability of precision farming. However, despite these advancements, a systematic gap remains: existing tools are often either too administrative to provide technical guidance or too hardware-dependent for the average farmer to maintain.
+This disconnect creates a barrier to entry for small-scale producers who wish to transition to climate-smart methods like hydroponics but lack the capital for expensive sensor arrays. While precision agriculture is often framed as a luxury in developing economies, recent initiatives like the AgriTech4Rwanda Innovation Challenge (2025) have highlighted that the future of the sector relies on democratizing this technology. To achieve this, there is a pressing need for a middle-ground solution, a software-first approach that provides the professional-grade advisory logic of a commercial farm but operates on the low-cost, manual data inputs available to an independent smallholder.
+2.5.1 Public and Large-Scale Infrastructure
+* The Smart Nkunganire System (SNS), developed by BK TecHouse in collaboration with the Rwanda Agriculture Board (RAB), is the most successful digital intervention in Rwanda, utilized by over 3.5 million farmers as of 2025. This platform has revolutionized the agricultural supply chain by digitizing the distribution of subsidized seeds and fertilizers, significantly increasing transparency and efficiency in the input market. While SNS has recently integrated a fertilizer recommendation module for high-priority food crops such as maize and beans, it remains fundamentally an administrative supply-chain tool. Its recommendations are based on broad seasonal calendars and regional soil profiles rather than the granular, daily nutrient adjustments (pH and EC balance) required in a closed hydroponic environment. Consequently, it lacks the real-time, interactive advisory layer necessary to guide a farmer through the complex chemical management of soilless systems.
+* The Smart Crop Yield Prediction System (SMART-CYPS) represents the High-Tech academic tier in Rwanda, emerging as a research-led initiative from the University of Rwanda (Kuradusenge et al., 2024). This system utilizes Internet of Things (IoT) sensors and Machine Learning algorithms (such as Random Forest) to collect real-time soil moisture and weather data to forecast seasonal yields for crops like Irish potatoes. While SMART-CYPS achieves high precision in yield forecasting, it is primarily designed as a monitoring and policy-making tool for large-scale planning and cooperatives. The dependency on physical IoT hardware creates significant cost and maintenance barriers for independent smallholders in rural areas. Furthermore, the system focus is on "prediction" (calculating what the yield will be) rather than "intervention" (providing step-by-step instructions on how a farmer should adjust nutrient solutions today).
+* Managed by the Ministry of Agriculture and Animal Resources (MINAGRI), e-Soko is a mobile-based SMS and web platform dedicated to ensuring market price transparency across 62 major markets in Rwanda. It empowers farmers during the post-harvest phase by providing real-time pricing trends for 78 different commodities, which helps them negotiate more effectively with middlemen. However, as a Market Information System (MIS), e-Soko is entirely silent on the production phase of agriculture. It offers no technical guidance or expert layer to assist farmers in managing the intricate biological and chemical parameters of their crops. For a hydroponic farmer, knowing the market price of a tomato is helpful, but e-Soko provides no assistance in ensuring that the tomato reaches harvest quality through proper nutrient management.
+2.5.2 Commercial Hydroponic Benchmarking: Eza Neza Farm
+Eza Neza serves as a critical proof-of-concept for high-precision hydroponics in Rwanda, demonstrating that soilless vertical farming can increase yields by up to 30% while using 80% less water. However, as a commercial producer rather than a technology provider, their sophisticated Automated Nutrient and Climate Control systems remain inaccessible to the broader farming community. Their model relies on high-capital, industrial-grade automation that is managed internally. This creates a clear opening for a software-as-the-expert solution like FarmSmart, which aims to democratize this level of precision by providing localized advice based on manual inputs, bypassing the need for the expensive hardware infrastructure utilized by large-scale commercial entities.
+2.5.3 Emerging Tech-Centric Solutions
+* TecGrw functions as a private-sector agritech firm dedicated to modernizing Rwandan agriculture through the deployment of GSM-enabled smart greenhouses and Internet of Things (IoT) irrigation systems. By integrating a network of sensors that track critical environmental variables, including temperature, humidity, and CO₂ levels, TecGrw enables year-round production of high-value crops with up to 90% water savings. However, their business model is primarily focused on infrastructure installation, which presents a significant capital expenditure (CAPEX) hurdle for the average smallholder. While TecGrw provides an advanced IoT dashboard for remote monitoring, the system remains hardware-heavy, requiring the purchase of sophisticated greenhouse structures and sensor arrays that are often beyond the financial reach of independent farmers. Consequently, their solutions demonstrate the potential of AI in agriculture but highlight a persistent barrier for those seeking software-first alternatives that do not require massive upfront physical investment.
+
+
+* Mizero Agritech (operating under the Mizero Greens initiative) addresses the challenges of resource scarcity through IoT-based precision irrigation and soil health monitoring. Their platform utilizes soil moisture sensors and weather data to guide farmers on optimal watering schedules via SMS or WhatsApp, achieving water reduction rates of up to 70% in pilot projects. While Mizero’s model successfully bridges some gaps by offering a profit-share arrangement to lower setup costs, a notable Advisory Gap remains in the technical management of nutrient solutions. Most monitoring-centric platforms like Mizero excel at notifying a farmer when to irrigate but lack the specialized machine learning logic required to provide specific, step-by-step chemical adjustment instructions (such as exact pH or EC buffering) based on manual inputs. This reinforces the necessity for a platform that moves beyond simple alerts to provide a comprehensive, software-driven expert layer for daily crop management.
+2.5.4 Comparative Summary of Gaps
+A critical analysis of the current Rwandan agritech ecosystem reveals a clear distinction between platforms that manage the business of farming and those that monitor the environment of farming. While both are necessary, neither addresses the specific Expert Barrier faced by smallholders entering the hydroponic sector.
+System Category
+	Key Strength
+	Operational Weakness for Smallholders
+	Technical Gap (The Advisory Gap)
+	Administrative / Value Chain (SNS, e-Soko)
+	National scale and trusted government integration.
+	Focused on bulk input supply and market prices, not production.
+	Lacks granular, daily nutrient management logic (pH/EC).
+	Academic & Research (SMART-CYPS)
+	High precision in long-term yield forecasting.
+	High dependency on physical IoT sensors and research hardware.
+	Focuses on prediction (what will happen) rather than intervention (what to do).
+	Commercial (Eza Neza)
+	Proven high-yield commercial viability in Rwanda.
+	Proprietary technology used internally; not for sale to others.
+	High-capital Black Box automation inaccessible to smallholders.
+	Hardware-Heavy (TecGrw, Mizero)
+	Real-time environmental monitoring and alerts.
+	Significant upfront capital (CAPEX) and technical maintenance needs.
+	Provides raw data points but lacks a step-by-step advisory layer for chemical adjustments.
+	FarmSmart (Proposed)
+	Low-cost, data-light accessibility.
+	Relies on manual inputs (lower precision than industrial sensors).
+	Provides an Expert Engine for real-time, actionable management advice.
+	2.6 Review of Related Work
+The related work was analysed to address the core research questions of the FarmSmart project:
+2.6.1 ML Accuracy with Minimal Manual Data (RQ1) The convergence of artificial intelligence and machine learning with agri-technology is a growing sector at a breakneck pace. According to a peer-reviewed paper, Shalash (2024) found that Random Forest and linear regression algorithms could be employed to improve the efficiency of hydroponics, and TecGRW (2025) supported these results by showing the efficacy of predictive analysis in improving crop quality and optimizing resource consumption. However, a gap in existing research caught the researcher's attention, and it is that the majority of existing research is dependent on high-frequency IoT sensor inputs. According to TecGRW (2025), accurate guidance with minimal manual input is necessary in inclusive software, a challenge still pending in the Sub-Saharan African literature on the topic.
+2.6.2 UI Features for Scientific Advice (RQ2) In the literature, there was a knowledge gap in relation to EC and pH levels being a key determinant for crop failure, and this was identified as a pressing concern that needs to be addressed (Mastercard Foundation, 2025). It was indicated that for technology to be successful, there was a need for adaptation to suit the context. In relation to small-scale farmers who are not all computer literate, there was a suggestion that a chat interface would be more effective than the usual data dashboard presentation (UNDP, 2025). In the course of the review, there was a research gap in relation to UCD(User-Centered Design) and the development of artificial intelligence technology, in that there was articulation of the capability of the technology, but there was little research on the manner in which the chatbot should present scientific information.
+2.6.3 Peer-to-Peer Forums and Community Trust (RQ3) Institutional reports from FAO (2025) and REMA (2024) suggest that the effectiveness of online climate change adaptation solutions is increased when they contribute to building community resilience. Unfortunately, most modern solutions use the top-down method, involving minimal engagement with farmers. The literature review helped to identify that trust is an important adoption barrier, and that trust is higher among agricultural advice coming from successful peers. This helps to inform the inclusion of the peer-to-peer forum component in the FarmSmart system to shift from the top-down method to community-driven knowledge sharing.
+2.6.4 Summary of Reviewed Literature
+The integration of the literature among the 18 sources shows that, despite the fact that there is a substantial “brain” related to AI-enhanced hydroponics, the current state of the field is limited by the use of expensive hardware and non-localized interfaces. There is a lack of studies on low-input ML models, which can perform without the need of real-time sensors, as well as a lack of user-centered design principles related to agricultural chatbots in the Rwandan setting.
+2.7 Strengths and Weaknesses of the Existing Systems
+A synthesis of the reviewed systems reveals that while current agritech solutions in Rwanda are technologically advanced, they exhibit a significant misalignment with the socioeconomic realities of small-scale producers.
+* Technical Strengths: Existing commercial and research systems (such as SMART-CYPS and TecGrw) offer high-fidelity monitoring and industrial-grade automation. These platforms provide continuous data streams and high-precision environmental control, proving that hydroponic optimization is scientifically possible within the Rwandan climate.
+* Systemic Weaknesses: The primary weakness is the prohibitive cost of entry; automated kits require significant capital for hardware importation and specialized maintenance. Furthermore, these systems often utilize a "black-box" approach where data is collected but not explained. Most existing software is calibrated for international water chemistry standards and lacks a localized, conversational interface in Kinyarwanda, creating a linguistic and technical Expert Barrier for non-scientific users.
+2.8 The Research Gap
+Despite the proliferation of Smart Agriculture literature, a distinct gap exists at the intersection of low-cost accessibility and localized machine learning advisory. Current research, such as the works of Shalash (2024) and Kuradusenge et al. (2024), is heavily skewed toward Hardware-Heavy IoT frameworks that rely on a continuous flow of high-frequency sensor data to function. These studies fail to address the socio-economic constraints of smallholders who cannot afford or maintain such hardware.
+Furthermore, while TecGRW (2025) emphasizes the importance of predictive analysis, there is a notable absence of studies exploring the accuracy of predictive ML models when restricted to minimal, manual data inputs provided by farmers. Additionally, existing literature regarding User-Centered Design (UCD) in Sub-Saharan Africa, such as reports by the Mastercard Foundation (2025), articulates the need for digital tools but lacks a specific framework for translating scientific nutrient data into trust-based, peer-validated advice through localized digital forums. FarmSmart seeks to fill this void by shifting the focus from expensive hardware monitoring to an "Intelligence-First" software approach tailored for the Rwandan smallholder.
+2.9 General Comment and Conclusion
+The literature review confirms that while the intelligence required to optimize hydroponic agriculture exists, the delivery mechanism for the Rwandan smallholder is absent. Current systems prioritize hardware over accessibility, making them economically non-viable for the majority of the population. This makes the development of the FarmSmart system a necessary intervention. By replacing expensive sensors with a software-based ML engine and a localized chatbot interface, this project aims to bridge the knowledge gap, making professional agricultural expertise accessible, credible, and economically sustainable for the small-scale farmer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER THREE: SYSTEM ANALYSIS AND DESIGN
+3.1 Introduction
+This chapter outlines the technical framework and research methodology governing the development of the FarmSmart system. To address the research questions effectively, this study adopts a Mixed-Methods Research Design.
+* Quantitative Approach: This will be used to evaluate the accuracy of the Machine Learning algorithms (RQ1). The research will measure the variance between the model's nutrient predictions and established scientific benchmarks, utilizing numerical metrics such as Mean Squared Error (MSE) or R-squared values.
+* Qualitative Approach: This will be applied through a User-Centered Design (UCD) framework to assess the usability and trust factors of the chatbot interface (RQ2) and the community forum (RQ3). Qualitative insights gathered from preliminary farm visits and user feedback sessions will ensure that the technical development directly addresses the Expert Barrier identified in the literature.
+The design process aims to achieve a strategic balance between high-precision computational logic and the socio-technical requirements of the Rwandan smallholder. By synthesizing these two approaches, the methodology ensures that each technical feature, from the Flask backend to the ML advisory engine, is both scientifically valid and practically accessible.
+3.2 Research Design
+This study adopts a Developmental Research Design, specifically a Type I design (Richey & Klein, 2007), which focuses on the design and development of a specific product or tool. This design is appropriate because the goal of this research is not only to build the FarmSmart platform but to evaluate its effectiveness in bridging the Expert Barrier for smallholders.
+The research follows a Pragmatic Paradigm using a Mixed-Methods Approach. It combines Quantitative research to measure the accuracy of the Machine Learning models with Qualitative research to evaluate user trust and interface usability through User-Centered Design (UCD) principles.
+3.2.1 The Development Model: Agile SDLC
+To operationalize the research design, the project utilizes the Agile SDLC (Software Development Life Cycle) model. While the research design provides the academic framework, the Agile model provides the technical methodology for execution.
+The selection of Agile is justified by several factors:
+* Iterative Refinement: Since localized ML models for Rwanda’s specific water chemistry are experimental, Agile allows for continuous training and testing of the algorithm in small, manageable sprints.
+* User-Centered Integration: The research relies on feedback from visits to farms (such as Ezaneza and Ndego). The Agile model’s review cycles ensure that this qualitative feedback is directly integrated into the software requirements after every sprint.
+* Mitigation of Uncertainty: Given the unpredictable nature of manual data quality from rural environments, the iterative nature of Agile prevents the project from being locked into a rigid, non-functional design, allowing for pivots based on real-world data findings.
+3.2.2 Mapping Research Phases to Development
+To ensure the research objectives are met, the project is structured into four distinct phases:
+1. Preliminary Analysis (Sprint 0): Qualitative field visits and literature data mining to define system requirements.
+2. Prototyping (Sprints 1-2): Development of the Flask backend and the initial ML predictive engine.
+3. Alpha Testing (Sprint 3): Quantitative measurement of ML accuracy using manual datasets.
+4. Final Evaluation (Sprint 4): Qualitative assessment of user interaction with the chatbot interface.
+3.2.3 Sampling Strategy 
+To address the research questions effectively, the project will utilize Purposive Sampling.
+* Sample Size: I will select a group of 10-15 smallholder farmers and cooperative managers located in the Southern Province of Rwanda.
+* Selection Criteria: Participants must be currently willing or already engaged in or transitioning to soilless farming and possess a basic smartphone with internet connectivity.
+* Feasibility: This sample size allows for in-depth qualitative feedback regarding the chatbot's usability (RQ2) and the forum's trust-building potential (RQ3), while providing enough manual data points to validate the ML engine’s accuracy in a real-world, low-tech environment.
+3.3 Dataset and Dataset Description
+To address the lack of high-frequency, publicly available hydroponic data specifically for the Rwandan context, this project utilizes a Hybrid Dataset Strategy. This involves merging peer-reviewed academic data with Synthetic Rule-Based Data to create a robust training set that reflects the manual, low-precision environment of Rwandan smallholders.
+3.3.1 Data Source and Acquisition
+The dataset is constructed from three primary sources, ensuring both scientific validity and regional relevance:
+1. Mendeley Data (Shalash et al., 2025): I will pull numerical metadata from the HydroGrowNet of Batavia Dataset (Link), which contains 390,000+ records of synchronized pH, EC, and water temperature data. This provides the Expert Truth for nutrient uptake patterns.
+2. Kaggle Repository (Itsmonir31, 2024): I will utilize the Hydroponics IoT Sensor & Actuator Logs (Link). This dataset contains 50,570 rows of telemetry paired with Actuator Labels (e.g., pH_reducer: ON/OFF), which allows the model to learn the specific actions required to correct imbalances.
+3. Localized Synthetic Augmentation: Using Python (Pandas/NumPy), I will generate 5,000 noise-infused records. These are modeled after the Oklahoma State University Extension (2025) nutrient standards and calibrated with climate data from Meteo Rwanda (2025) to reflect local temperatures and the typical (0.1 - 0.2) margin of error found in affordable handheld meters used by smallholders.
+3.3.2 Dataset Structure and Content
+The final merged dataset consists of 445,000+ records across five critical variables:
+
+
+Column Name
+	Data Type
+	Range/Detail
+	Role in Model
+	Crop_ID
+	Categorical
+	Lettuce, Peppers, Tomatoes
+	Input Feature
+	pH_Level
+	Float
+	4.0 – 8.5 (captured in 0.1 increments)
+	Input Feature
+	EC_Value
+	Float
+	0.5 – 4.0 mS/cm
+	Input Feature
+	Ambient_Temp
+	Float
+	15°C – 32°C (Local Rwanda avg)
+	Input Feature
+	Target_Action
+	Label
+	5 Classes (e.g., "Add pH Down", "Dilute")
+	Output (Label)
+	3.3.3 How the Dataset Answers the Research Questions
+* RQ1 (Accuracy with Minimal Inputs): By isolating only the four variables (Crop, pH, EC, Temp), this dataset allows me to measure if the Random Forest and Linear Regression models can maintain high accuracy using only the limited manual data a farmer can provide. It specifically tests the model's resilience to the noisy data typical of handheld sensors.
+* RQ2 (Scientific Grounding): The dataset acts as the Expert Engine for the chatbot. When a farmer inputs a pH of 8.0, the chatbot retrieves a recommendation grounded in the peer-reviewed HydroGrowNet benchmarks. This ensures the advice is scientifically credible and builds the community trust needed for adoption (RQ3).
+3.4 Functional and Non-functional Requirements
+3.4.1 Functional Requirements
+These requirements define the specific behaviors and features the software must provide to overcome the expert barrier\ in hydroponics.
+
+
+
+
+
+
+Requirement ID
+	Feature
+	Description
+	FR-01
+	Manual Data Entry
+	The system shall provide an interface for farmers to manually input pH and Electrical Conductivity (EC) readings obtained from affordable handheld meters.
+	FR-02
+	AI Advisory Chatbot
+	The platform shall feature a conversational AI engine that interprets manual data entries and generates immediate, actionable management recommendations in simplified terms.
+	FR-03
+	Community Forum
+	The system shall host a secure peer-to-peer space allowing farmers to share success stories, upload crop photographs for visual benchmarking, and perform collaborative troubleshooting.
+	3.4.2 Non-functional Requirements
+These requirements define the quality attributes and operational constraints necessary for successful deployment in rural environments.
+Requirement ID
+	Attribute
+	Specification
+	NFR-01
+	Performance
+	The application must be optimized for low-bandwidth environments, ensuring a load time of under 3 seconds on standard 3G mobile networks.
+	NFR-02
+	Usability
+	The interface must be fully localized, supporting Kinyarwanda translations to accommodate farmers with limited English or French literacy.
+	NFR-03
+	Scalability
+	The backend architecture shall be designed to handle vertical and horizontal scaling to support an increasing number of concurrent users across multiple farming cooperatives.
+	3.5 Proposed Model Diagram
+The proposed Machine Learning model will follow a supervised learning pipeline. Data will flow from the user input (pH/EC readings), be processed by a Random Forest Regression algorithm, and generate a specific advice output. This output will then be mapped to a natural language response delivered through the Chatbot interface. This ensures that even without expensive automated sensors, the intelligence of the farm remains accurate and helpful.
+3.6 System Architecture
+The FarmSmart platform will follow a 3-Tier System Architecture to ensure a clean separation between the user interface, the business logic, and the data:
+1. Presentation Tier (Frontend): This will be developed using flask, HTML, JavaScript, Tailwind  focusing on a mobile-first, responsive design that is easy to navigate on smartphones.
+2. Logic Tier (Backend): This will be powered by Python and Flask, serving as the central hub that hosts and executes the Machine Learning models.
+3. Data Tier (Database): Sqlite will be used for real-time data storage, managing user profiles, nutrient logs, and forum interactions.
+3.7 Ethical Considerations
+Data Privacy and Security: The system will collect personal information and farm data. In compliance with Rwanda’s Law Relating to the Protection of Personal Data and Privacy, all user data will be stored securely. Access to the database will be restricted, and personal identifiers will be anonymized. Informed consent will be obtained from all participants in the sampling group before data collection begins.
+Accountability in AI Advice: Since the AI Advisory Chatbot provides chemical management instructions, there is an ethical risk of crop damage. To mitigate this, the system will include clear disclaimers. Furthermore, the Human-in-the-loop validation through the Community Forum ensures that automated advice is cross-referenced by successful peers, reducing the risk of technical error.
+3.8 UML Diagrams
+To provide a clear technical roadmap for the implementation phase, the following mandatory UML diagrams were developed:
+* Entity Relationship Diagram (ERD): The ERD defines the logical structure of the FarmSmart database, ensuring data integrity and supporting the application's historical analysis features. At the center of the schema is the User entity, which maintains a one-to-many relationship with both Crops and Forum Posts, tracking personal identifiers and community contributions. Each Crop entry acts as a parent to multiple Nutrient Logs, creating a chronological history of a specific plant’s lifecycle; these logs store the vital pH and EC readings alongside the specific advice generated by the ML engine at that moment. This relational structure is designed to be lightweight yet robust, allowing the Flask backend to efficiently query a farmer's progress over time while maintaining a secure link between user accounts and their private agricultural data. By organising information into these four primary entities, the system successfully bridges the gap between raw field observations and long-term predictive growth management.
+  
+
+                        Fig.1.ERD
+* Use Case Diagram: The Use Case Diagram illustrates the functional requirements of the FarmSmart platform by mapping the interactions between the primary actor, the Farmer, and the system’s core modules. The Farmer initiates the majority of system actions, starting with secure authentication via the Register/Login use cases. The core of the platform’s utility is captured through the "Input pH/EC Readings" and "Get ML-Driven Advice" use cases, where the farmer provides manual measurements that the system—supported by the internal ML Engine—processes to return localized guidance. Additionally, the diagram highlights the social and analytical layers of the application, allowing farmers to engage in peer-to-peer knowledge exchange through the forum use cases and review historical agricultural trends via the growth history functionality. This visual map ensures that the development phase remains focused on the essential services that directly empower the user to manage their hydroponic systems successfully.
+  
+
+                Fig.2 Use Case Diagram
+
+
+* Flowchart: The system access flowchart illustrates the first logical sequence that users follow after gaining access to the FarmSmart system, which is essential for a safe and role-based navigation system. This sequence begins at the landing page, where the system checks the verification of the status of the user’s account, where newcomers are led to a registration module for the creation of a secure account, while regular users are led to the login gateway. After the submission of the login details, the system uses a role-based verification system that distinguishes between “Admin” and “Farmer” accounts. Upon the verification of the user’s role, where the system recognizes the user as an “Admin,” the system leads the user to the Admin Dashboard, which contains general system controls. However, after the system recognizes the user as a “Farmer,” the system leads the user to the functional dashboard, which enables the user to interact with the AI chatbot, record nutrient information, and join the forum.  
+                Fig.3. User Flow
+   * Sequence Diagram: The digital evolution in the FarmSmart system is an integrated flow of data, where manual field notes and community engagement are channeled into functional agricultural intelligence in a three-tier system. The system begins with the farmer making pH or EC submissions using the mobile interface, thus initiating the Flask system in the backend to check the validity of the input while accessing the localized machine learning system for accurate, location-specific nutrient advice. On the same platform, the system manages community-generated knowledge, where the system authenticates and cleans the input in the forums to ensure the secure flow of information. The system ensures that each piece of information, ranging from scientific water chemistry analysis to community inquiries, is stored in the centralized database and channeled back to the farmer in localized, simplified advice.  
+                Fig.4. Sequence Diagram
+3.9 Development Tools
+The following tools will be used to build the FarmSmart ecosystem:
+      * VS Code: As the primary development environment.
+      * SQLite / SQLAlchemy: For database management and data persistence within the Flask environment.
+      * Python (Flask / Scikit-learn): For developing, training, and testing the Machine Learning engine and handling backend logic.
+      * HTML / CSS / JS: For building the interactive and responsive user interface (using Tailwind CSS for styling).
+      * GitHub: For version control and managing the code repository.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES
+
+
+      1. Agriculture. (2024, October 11). Official Rwanda Development Board (RDB) https://rdb.rw/investment-opportunities/agriculture/
+      2. Rwanda Organization For Development Initiatives (RODI)(n.d.).. https://rodirwanda.org.rw/from-traditional-to-smart-farming-a-new-era-for-rwandas-farmers/
+      3.  Asian Development Bank. (2024). Solutions for Agricultural Transformation: Moving towards Knowledge-Intensive Agriculture https://www.adb.org/sites/default/files/publication/421526/solutions-agricultural-transformation.pdf
+      4. ACEIoT. (2025). Monitoring urban indoor farming with IoT in Rwanda. https://aceiot.ur.ac.rw/?Monitoring-of-urban-indoor-farming
+      5. Ennaji, O., Vergütz, L., & El Allali, A. (2023). Machine learning in nutrient management: A review. Artificial Intelligence in Agriculture https://www.sciencedirect.com/science/article/pii/S258972172300017X?via%3Dihub
+      6. AllAfrica. (2025, October 8). Rwanda adopts machine learning and satellite imagery for agriculture. https://allafrica.com/stories/202510080078.html
+      7. Smith, A., et al. (2021). Artificial Intelligence in Agricultural Extension for Sustainable Development. International Journal of Agricultural and Sustainable Development. https://journal.multitechpublisher.com/index.php/ijasr/article/download/740/780/5890
+      8. Dutta, M., Kumar, A., & Singh, P. (2025). Machine learning insights for sustainable hydroponic cultivation. *Scientific Reports*, *14*(1), Article 82920. https://doi.org/10.1038/s41598-024-82920-8
+      9. Food and Agriculture Organization. (2025). Promoting green Rwanda through urban farming. https://www.fao.org/in-action/food-for-cities-programme/news/detail/ru/c/1735177/
+      10. Jones, J. B. (2005). *Hydroponics: A practical guide to the soilless growing of plants* (2nd ed.). CRC Press. https://books.google.com/books/about/Hydroponics.html?id=y_bKBQAAQBAJ
+      11. Mastercard Foundation. (2025). Hydroponic farming in Rwanda. https://mastercardfdn.org/en/articles/hydroponic-farming-in-rwanda/
+      12. Mizero Agritech. (2025). Smart AI-driven farming solutions for Rwanda. https://www.mizeroforgreens.org
+      13. Rwanda Adaptation Accelerator Program. (2024). Turning climate challenges into an opportunity. Alliance of Bioversity International and CIAT. https://alliancebioversityciat.org/stories/rwanda-turning-climate-challenges-opportunity-agricultural-growth
+      14. Rwanda Environment Management Authority. (2024). Conservation agriculture: A path to productive and climate-resilient farming. https://www.rema.gov.rw/updates/news-details/conservation-agriculture-a-path-to-productive-and-climate-resilient-farming-in-rwanda/
+      15. Shalash, O. (2024). Enhancing hydroponic farming with machine learning. *SSRN Electronic Journal*. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5079228
+      16. TecGRW. (2025). Why hydroponic farming is the future of food security in Rwanda. https://www.tecgrw.com/resources/blog/why-hydroponic-farming-is-the-future-of-food-security-in-rwanda
+      17. TechPalate Insights. (2025). Rwanda embraces machine learning, satellite imagery for precision agriculture. https://techpalateinsights.com/rwanda-adopts-machine-learning-satellite-imagery-to-drive-precision-agriculture/
+      18. Kuradusenge, M., Hitimana, E., Mtonga, K., Gatera, A., Habiyaremye, J., Ngabonziza, J., Hanyurwimfura, D., Rukundo, P., & Mukasine, A. (2024). SMART-CYPS: An intelligent internet of things and machine learning powered crop yield prediction system for food security. Discover Internet of Things, 4(1), 23 https://link.springer.com/article/10.1007/s43926-024-00079-0
+      19. Rwanda Green Fund (FONERWA). (2025). AgriTech4Rwanda Innovation Challenge Framework: Scaling Climate-Resilient Solutions for Smallholder Farmers. Kigali, Rwanda.https://greenfund.rw/sites/default/files/2025-02/AgriTech4Rwanda%20-%20TOR%20Call%20for%20Proposal%20for%20ESO.pdf
+      20. Ireme Invest. (2025). AgriTech4Rwanda Innovation Challenge: Accelerating Science-Based Agri-Tech Solutions for Rwanda’s Strategic Plan for Agricultural Transformation (PSTA IV).https://greenfund.rw/ireme-invest
+      21. UKC Rwanda. (2025). Hydroponic fodder technology: Boosting milk production and environmental sustainability. https://ukc.rw/hydroponic-fodder-technology-a-key-solution-to-boost-milk-production-protect-the-environment-in-rwanda/
+      22. United Nations Development Programme. (2025). Cost-benefit analysis of hydroponic fodder. https://www.undp.org/sites/g/files/zskgke326/files/2025-10/hydroponics_cost_benefit_analysis_final_report_3_1.pdf
+      23. United Nations Development Programme. (2025). Hydroponics: A smart solution for farmers facing climate disasters in Rwanda. https://www.undp.org/rwanda/blog/hydroponics-smart-solution-farmers-facing-climate-disasters-rwanda
+      24. Vertical Farm Daily. (2025). Smart solutions for growers affected by climate crisis in Rwanda. https://www.verticalfarmdaily.com/article/9740867/rwanda-smart-solutions-for-growers-affected-by-climate-crisis/
+      25. Waithaka, M., Nelson, G. C., Thomas, T. S., & Kyotalimye, M. (2013). *East African agriculture and climate change: A comprehensive analysis*. International Food Policy Research Institute. https://reliefweb.int/report/burundi/east-african-agriculture-and-climate-change-comprehensive-analysis
+      26. 17 sustainable development goals: United Nations. (n.d.). https://glorew.com/articles/17-sustainable-development-goals-united-nations/?gad_source=1&gad_campaignid=11802760236&gbraid=0AAAAABuL4GBIVAuEtSW6kh6jMiPWzJ7yS&gclid=CjwKCAiAraXJBhBJEiwAjz7MZVqmg9XBLY6zULRxKeK8q5rIH_JwasuuauGzHxVoASXbOTB5CYJCPBoCp5IQAvD_BwE
+      27. The Hippie House. (2019, September 5). Types of hydroponic systems. https://thehippiehouse.com.au/blogs/news/types-of-hydroponic-systems?srsltid=AfmBOooS2xw9BxQrc_D0ohdGSERCf40gsjts4Z_WhegGCtO-HorH6LcB
